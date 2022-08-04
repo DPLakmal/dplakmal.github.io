@@ -1,0 +1,356 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    transition: 0.3s;
+}
+
+section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+}
+
+
+
+.hero {
+    background-color: #1c1c1c;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+footer {
+    margin-top: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show {
+    display: block;
+}
+
+
+
+li {
+    /* width: 200px; */
+    text-decoration: none;
+    justify-content: space-around;
+
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+.hero-text {
+    margin-left: 140px;
+    margin-bottom: 200px;
+}
+
+.hero-area {
+    background-image: url(images/hero.jpg);
+    background-position: center 40%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(231, 231, 231);
+    background-blend-mode: multiply;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    padding:10px;
+  
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin: 20px;
+
+}
+
+
+.button:hover {
+    background-color: #ef744b;
+
+
+}
+
+.button:active {
+    background-color: #1c1c1c;
+}
+
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.headshot {
+    border-radius: 150px;
+    align-items: center;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.project-card {
+    border-radius: 10px;
+    width: 400px;
+   
+    box-shadow: 5px 5px 20px rgb(185, 185, 185);
+    margin: 10px;
+    margin-top: 25px;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sub-section-alternative {
+        margin-bottom: 300px;
+    }
+
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 350px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width:1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: transparent;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: transparent;
+
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    margin: 20px;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+
+    transition: 0.3s;
+}
+
+.dark {
+    background-color: rgb(32, 32, 32);
+    color: #ffff;
+    transition: 0.3s;
+
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+
+}
+
+.dark>* {
+    /* color: rgb(32, 32, 32); */
+    color: #ffff;
+
+
+}
+
+
+#html { border-radius: 3px;
+    background-image: url("images/html-square.png");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+}
+
+
+#css {
+    border-radius: 3px;
+    background-image: url("images/css-square.png");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    margin-inline: 30px;
+}
+
+
+#js { border-radius: 3px;
+    background-image: url("images/javascript-square.png");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(241, 241, 38);
+}
+
+#flutter { border-radius: 3px;
+    background-image: url("images/flutter.jpg");
+    background-size: 50px;
+    width: 40px;
+    height: 40px;
+    margin-inline: 30px;
+}
+
+
+#dart { border-radius: 3px;
+    background-image: url("images/dart.png");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-inline: 30px;
+}
+
+
+.project-lang-item{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
